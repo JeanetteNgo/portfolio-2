@@ -12,11 +12,18 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 100px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s;
+}
+nav.sticky {
+    background: #fef;
+    opacity: 95%;
+    padding: 15px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 nav .logo {
     color: #fef;
@@ -25,6 +32,9 @@ nav .logo {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+}
+nav.sticky .logo {
+    color: #450070;
 }
 nav ul {
     position: relative;
@@ -35,10 +45,14 @@ nav ul li {
     list-style: none;
 }
 nav ul li a {
+    color: #fef;
     position: relative;
     display: inline-block;
     margin: 0 15px;
     text-decoration: none;
+}
+nav.sticky ul li a {
+    color: #450070;
 }
 
 #particles-js {
@@ -91,4 +105,86 @@ section {
     text-decoration: none;
     font-weight: 400;
     border-radius: 30px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fef;
+}
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    color: #fef;
+}
+.content-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav,
+    nav.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu {
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fef;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active {
+        right: 0;
+    }
+    nav ul li a {
+        color: #450070;
+        font-size: 22px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active {
+        background: url(../images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    nav.sticky .toggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 100px 80px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
 }
