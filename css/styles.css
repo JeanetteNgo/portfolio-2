@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    color: #fef;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+nav ul {
+    position: relative;
+    display: flex;
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+nav ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+section {
+    padding: 100px;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-color: #450070;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    font-size: 2.5em;
+    color: #fef;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span {
+    font-weight: 600;
+    color: #ff0070;
+}
+.banner h3 {
+    font-size: 1.5em;
+    color: #fef;
+    font-weight: 500;
+}
+.banner h4 {
+    font-size: 1.2em;
+    color: #fef;
+    font-weight: 400;
+}
+.btn {
+    position: relative;
+    color: #fef;
+    background-color: #ff3414;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 30px;
+}
