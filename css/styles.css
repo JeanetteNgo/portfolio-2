@@ -116,6 +116,9 @@ section {
     color: #fef;
     font-weight: 400;
 }
+.banner p {
+    color: #fef;
+}
 
 .btn {
     position: relative;
