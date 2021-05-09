@@ -22,7 +22,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 16px 100px;
     background: #450070;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     z-index: 1000;
@@ -32,8 +32,8 @@ nav {
     transition: 1s;
 }
 nav.sticky {
-    background: #fef;
-    padding: 15px 100px;
+    background: rgba(255, 238, 255, 0.95);
+    padding: 10px 100px;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
 nav .logo {
@@ -59,11 +59,12 @@ nav ul li a {
     font-weight: 500;
     position: relative;
     display: inline-block;
-    margin: 0 15px;
+    /* margin: 0 15px; */
+    padding: 6px 15px;
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: #ff0070;
+    color: #ff3414;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -71,15 +72,23 @@ nav.sticky ul li a {
     color: #450070;
 }
 nav.sticky ul li a:hover {
-    color: #ff0070;
+    color: #ff3414;
     font-weight: 700;
     transition: 0.3s;
+}
+
+nav a.active,
+nav.sticky a.active {
+    color: #ff3414;
+    font-weight: 700;
+    /* border-bottom: #faa699 4px solid; */
 }
 
 /* HOMEPAGE */
 
 section {
     padding: 150px;
+    background-color: #450070;
 }
 .banner {
     position: relative;
@@ -136,12 +145,12 @@ section {
 .heading h2 {
     font-weight: 600;
     font-size: 30px;
-    color: #450070;
+    color: #fef;
 }
 .content {
     display: flex;
     justify-content: space-between;
-    color: #450070;
+    color: #fef;
 }
 .content-box {
     padding-right: 30px;
@@ -187,12 +196,12 @@ footer .btn a {
 @media (max-width: 768px) {
     nav,
     nav.sticky {
-        padding: 20px 50px;
+        padding: 15px 50px;
         z-index: 1000;
     }
     .menu {
         position: fixed;
-        top: 75px;
+        top: 70px;
         right: -100%;
         display: block;
         padding: 100px 50px;
