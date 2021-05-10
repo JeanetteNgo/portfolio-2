@@ -8,21 +8,34 @@
   <title>Jeanette's Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="images/myFavicon.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/4bab21cbed.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="home">
     <nav>
-        <a href="#" class="logo"> Jeanette. </a>
+        <a href="#" class="logo">
+          <img src="images/logo.png" width="35px">
+        </a>
+        <!-- <a href="#" class="logo"> Jeanette. </a> -->
         <div class="toggle" onclick="toggleMenu();"> </div>
         <ul class="menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">My Works</a></li>
+            <li><a href="#">My Works
+              <i class="fas fa-caret-down"></i>
+            </a>
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Art</a></li>
+              </ul>
+            </li>
             <li><a href="files/jeanette-resume.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
      
-    <div  id="particles-js"></div>
+    <div  id="particles-js">
+      <p> testing </p>
+    </div>
     <section class="banner">
         <div class="text-box">
             <h2> Hi! I am
@@ -61,13 +74,35 @@
         </div>
     </section>
 
+    <hr>
+
+    <section class="project-showcase">
+      <div class="heading">
+        <h2> Featured </h2>
+        <p> Check out my latest work here. </p>
+      </div>
+      <div class="content">
+        <div class="project-box">
+          <img src="images/cry.jpg">
+        </div>
+        <div class="project-box">
+          <img src="images/logo-light.png">
+        </div>
+        <div class="project-box">
+          <img src="images/logo-dark.png">
+        </div>
+      </div>
+
+      <div class="heading">
+        <a href="#" class="btn"> View More </a>
+      </div>
+    </section>
+
 
     <footer>
-        <div class="row">
-          <div class="col">
-            <h2> What's Next? </h2> <hr>
-          </div>
-        </div>
+      <div class="heading">
+        <h2> What's Next? </h2> <hr>
+      </div>
         <div class="row">
             <div class="col">
               <button type="button" class="btn">
@@ -86,7 +121,14 @@
             </div>
           </div>
         </div>
+
     </footer>
+
+    <div class="copyright">
+      <p> &#169; Jeanette 2021 </p>
+    </div>
+
+
 
 
     <!-- <script type="text/javascript">

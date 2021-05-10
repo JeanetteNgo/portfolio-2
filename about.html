@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeanette's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/myFavicon.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/4bab21cbed.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="about">
+    <nav>
+        <a href="#" class="logo">
+          <img src="images/logo.png" width="35px">
+        </a>
+        <!-- <a href="#" class="logo"> Jeanette. </a> -->
+        <div class="toggle" onclick="toggleMenu();"> </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="#">My Works
+              <i class="fas fa-caret-down"></i>
+            </a>
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Art</a></li>
+              </ul>
+            </li>
+            <li><a href="files/jeanette-resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-fluid" id="about-me-body">
+        <div class="container" id="about-me">
+          <div class="row">
+            <div class="col">
+              <h2> About Jeanette </h2> <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <a href="https://www.youtube.com/watch?v=bxqLsrlakK8&ab_channel=Revideo" target="_blank" data-toggle="tooltip" data-placement="top" title="hehe">
+                <img class="img-fluid" id="display-picture" src="images/display-picture.jpeg" alt="Jeanette">
+              </a>
+            </div>
+            <div class="col" id="about-text">
+              <p> Penultimate year undergraduate with a passion for art and design. 
+                <br> Likes penguins. &#128039;
+              </p>
+              <br>
+              <i class="fas fa-envelope"></i>
+              <a href = "mailto: jeanettengo@u.nus.edu.com"> &nbsp; jeanettengo@u.nus.edu </a>
+              <br>
+              <i class="fab fa-github"></i>
+              <a href = "https://github.com/JeanetteNgo/" target="_blank"> &nbsp; GitHub </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tabs -->
+        <!-- <div class="tab">
+          <button class="tab-links btn btn-primary" onclick="openTab(event, 'experience-tab')"> 
+            <a href="#experience-tab"> Experience </a>
+          </button>
+          <button class="tab-links btn-primary" onclick="openTab(event, 'education-tab')"> 
+            <a href="#education-tab"> Education </a> 
+          </button>
+        </div> -->
+  
+      </main>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

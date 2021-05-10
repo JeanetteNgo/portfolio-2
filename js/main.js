@@ -13,3 +13,24 @@ function toggleMenu(){
     menuToggle.classList.toggle(`active`);
     menu.classList.toggle(`active`);
 } 
+
+// Hover dropdown menu
+let portfolio = document.querySelector("portfolio");
+let dropdown = document.querySelector("dropdown");
+
+portfolio.addEventListener("mouseover", function(ev){
+	dropdown.style.visibility = "visible";
+	dropdown.style.opacity = "1";
+})
+dropdown.addEventListener("mouseover", function(ev){
+	dropdown.style.visibility = "visible";
+	dropdown.style.opacity = "1";
+})
+portfolio.addEventListener("mouseout", function(ev){
+	dropdown.style.visibility = "hidden";
+	dropdown.style.opacity = "0";
+})
+dropdown.addEventListener("mouseout", function(ev){
+	dropdown.style.visibility = "hidden";
+	dropdown.style.opacity = "0";
+})
