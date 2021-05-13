@@ -558,6 +558,18 @@ li {
     text-decoration: underline;
 }
 
+/* Under construction */
+.under-construction {
+    width: 100%;
+    min-width: 100% !important;
+    height: 100vh !important;
+    background-color: #fef;
+    color: #450070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
