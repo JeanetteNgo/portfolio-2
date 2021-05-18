@@ -76,22 +76,39 @@
 
     <hr> -->
 
+    <!-- GlassMorphism: https://www.youtube.com/watch?v=hv0rNxr1XXk -->
     <section class="project-showcase">
       <div class="heading">
         <h2> Featured </h2>
         <p> Check out my latest work here. </p>
       </div>
-      <div class="content">
-        <div class="project-box">
-          <img src="images/cry.jpg">
-        </div>
-        <div class="project-box">
-          <img src="images/logo-light.png">
-        </div>
-        <div class="project-box">
-          <img src="images/logo-dark.png">
+      <div class="card" id="card-01">
+        <div class="content">
+          <h3> 01 </h3>
+          <h4> Shopee Redesign </h4>
+          <!-- <img src="images/cry.jpg"> -->
+          <p> UI redesign as part of Shopee Case Competition. </p>
+          <a href="#"> View full project </a>
         </div>
       </div>
+      <div class="card" id="card-02">
+        <div class="content">
+          <h3> 02 </h3>
+          <h4> Corpus Animatum </h4>
+          <!-- <img src="images/cry.jpg"> -->
+          <p> UI redesign as part of Shopee Case Competition. </p>
+          <a href="#"> View full project </a>
+        </div>
+      </div>
+      <div class="card" id="card-03">
+        <div class="content">
+          <h3> 03 </h3>
+          <!-- <img src="images/cry.jpg"> -->
+          <p> UI redesign as part of Shopee Case Competition. </p>
+          <a href="#"> View full project </a>
+        </div>
+      </div>
+
 
       <div class="heading">
         <a href="#" class="btn"> View More </a>
@@ -131,23 +148,18 @@
 
 
 
-    <!-- <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            let nav = document.querySelector('nav');
-            nav.classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        function toggleMenu(){
-            let menuToggle = document.querySelector('.toggle');
-            let menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-        } 
-    </script> -->
-
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 10,
+      speed: 200,
+      glare: true,
+      "max-glare": 0.6,
+    });
+    </script>
 </body>
 
 </html>

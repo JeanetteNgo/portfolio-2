@@ -34,3 +34,12 @@ dropdown.addEventListener("mouseout", function(ev){
 	dropdown.style.visibility = "hidden";
 	dropdown.style.opacity = "0";
 })
+
+// VANILLA-TILT
+////////////////////////////////////////////////////////////////////////////////
+VanillaTilt.init(document.querySelectorAll(".card"), {
+	max: 25,
+	speed: 400,
+	glare: true,
+	"max-glare": 1,
+});
