@@ -13,6 +13,7 @@
     width: 100%;
     height: 100%;
     z-index: -10; 
+    background: #450070;
     /* background-image: url(../images/forestNight.png); */
     background-size: contain;
 
@@ -175,14 +176,15 @@ nav.sticky ul li ul {
 /* HOMEPAGE */
 
 section {
-    padding: 150px;
+    padding: 60px 100px 40px 100px;
     background-color: #450070;
+    min-height: 100vh;
 }
 .banner {
     position: relative;
     min-height: 100vh;
     background-color: #450070;
-    background-image: url(../images/forestNight.png);
+    /* background-image: url(../images/forestNight.png); */
     background-position: right;
     background-size: cover;
     display: flex;
@@ -237,7 +239,7 @@ a {
 .heading {
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     color: #fef;
     text-transform: uppercase;
 }
@@ -333,18 +335,7 @@ a {
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-/* .project-showcase .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} */
-/* .project-showcase .content .project-box {
-    width: 30%;
-    padding: 20px;
-}
-.project-showcase .content .project-box img {
-    max-width: 100%;
-} */
+
 
 footer {
     background-color: #fef;
@@ -572,7 +563,7 @@ li {
 }
 .art-container .box:hover {
     z-index: 1;
-    transform: scale(1.25);
+    transform: scale(1.1);
     box-shadow: 0 25px 40px rgb(0, 0, 0, 0.4);
     border-radius: 25px;
 }
@@ -623,7 +614,7 @@ li {
     text-align: left;
     margin: 20px;
     padding: 20px;
-    color: rgb(255, 208, 251);
+    color: #fef;
     line-height: 180%;
 }
 .art-container .box .img-details-box .img-details h2 {
@@ -638,20 +629,21 @@ li {
     margin: 5px 0 0;
     padding: 0;
     font-size: 12px;
-    color: seashell;
+    color: #fef;
 }
 
 .art-container .box .img-details-box .img-details a {
     margin: 7px 0 5px 0;
     padding: 0;
-    font-size: 10px;
-    color: seashell;
-    font-family: 'Quicksand';
+    font-size: 12px;
+    font-weight: 400;
+    color: #fef;
 }
 .art-container .box .img-details-box .img-details a:hover {
     margin: 5px 0 0;
     padding: 0;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 500;
     color: rgb(250, 239, 87);
     text-decoration: underline;
 }
@@ -743,7 +735,23 @@ li {
         filter: invert(1);
     }
     section {
-        padding: 100px;
+        padding: 50px;
+    }
+    .project-showcase .card {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 10px;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
     }
 
 }

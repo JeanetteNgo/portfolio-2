@@ -43,3 +43,4 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 	glare: true,
 	"max-glare": 1,
 });
+
