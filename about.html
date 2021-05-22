@@ -48,61 +48,124 @@
           </div>
           
           <ul class="about-icons">
-            <li> <i class="fas fa-envelope"></i> </li>
-            <li> <i class="fab fa-github"></i> </li>
+            <li> <a href = "mailto: jeanettengo@u.nus.edu.com" data-toggle="tooltip" data-placement="top" title="Email"> 
+              <i class="fas fa-envelope"> </i> </a></li>
+            <li> <a href = "https://github.com/JeanetteNgo/" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub"> 
+              <i class="fab fa-github"></i> </a></li>
+            <li> <a href="https://www.linkedin.com/in/jeanette-ngo/" target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn"> 
+              <i class="fab fa-linkedin"></i> </a></li>
           </ul>
+
 
         </div>
       </div>
 
       <div class="about-right">
-        <div class="heading">
-          <h1> <i class="fas fa-address-card"></i> About Jeanette </h1>
-        </div>
-
-        <div class="about-right-content">
-          <p> Penultimate year undergraduate with a passion for art and design. 
-            <br> Likes penguins. &#128039; 
-          </p>
-        </div>
 
         <!-- Tabs -->
         <div class="tab-container">
           <div class="about-btns tab">
             <button class="tab-links btn" onclick="openTab(event, 'experience-tab')"> 
-              <a href="#experience-tab"> Experience </a>
+              <a href="#experience-tab"> <i class="fas fa-history"></i> Experience </a>
             </button>
             <button class="tab-links btn" onclick="openTab(event, 'education-tab')"> 
-              <a href="#education-tab"> Education </a> 
+              <a href="#education-tab"> <i class="fas fa-graduation-cap"></i> Education </a> 
             </button>
           </div>
 
           <div id="experience-tab" class="tab-content">
+            <div class="experience-container">
+              <div class="timeline">
+                <div class="timeline-container timeline-left">
+                  <div class="timeline-content">
+                    <h4><strong> Mar 2021 - May 2021 </strong></h4>
+                    <h2> UI/UX Design Intern </h2>
+                    <h3> Generation Connect Pte Ltd </h3>
+                    <ul>
+                      <li> Developed high fidelity web interface screens on Figma </li>
+                      <li> Recorded detailed website UI/UX functions in a spreadsheet </li>
+                      <li> Conducted user surveys and transcribed user interviews </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-container timeline-right">
+                  <div class="timeline-content">
+                    <h4><strong> Mar 2020 </strong></h4>
+                    <h2> Research Assistant </h2>
+                    <h3> National University of Singapore </h3>
+                    <ul>
+                      <li> Collaborated with a team of part-time research assistants to prepare required materials
+                        and assist with data collection for a field experiment </li>
+                    </ul>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
 
           </div>
       
           <div id="education-tab" class="tab-content">
-            <div class="heading" id="education-main-text">
-              <h2> <i class="fas fa-graduation-cap"></i> Education </h2>
-              <h3> National University of Singapore </h3>
-              <p>Bachelor of Arts (BA) ; Expected Hons (Distinction)
-              <br>Candidature Period: Aug 2018 - May 2022 (Expected)</p>
+            <div class="education-container">
+              <div id="education-header">
+                <h2> <i class="fas fa-graduation-cap"></i> National University of Singapore </h2>
+                <p>Bachelor of Arts (BA) ; Expected Hons (Distinction)
+                <br>Candidature Period: Aug 2018 - May 2022 (Expected)</p>
+              </div>
+  
+              <div class="module-col" id="major">
+                <h3> Major </h3>
+                <h4 id="global-studies"> Global Studies </h4>
+                  <ul class="module-list">
+                    <li> Global Issues </li>
+                    <li> Origins of the Modern World </li>
+                    <li> Global Political Economy </li>
+                    <li> Global Governance </li>
+                    <li> Methods of Social Research </li>
+                    <li> Social Thought & Social Theory</li>
+                    <li> Contested Globalization: Resistance and Resilience </li>
+                    <li> Citizenship and the Politics of Belonging </li>
+                  </ul>  
+              </div>
+              <div class="module-col" id="specialization">
+                <h3> Specialization </h3>
+                <h4 id="specialization-1"> Global Health, Environment & Technology </h4>
+                  <ul class="module-list">
+                    <li> Nature and Society </li>
+                    <li> Science, Technology & Society </li>
+                    <li> New Product Development</li>
+                  </ul>
+                <hr>
+                <h4 id="specialization-2"> Southeast Asia </h4>
+                  <ul class="module-list">
+                    <li> Southeast Asia: A Changing Region </li>
+                    <li> Politics in Southeast Asia </li>
+                    <li> Migration, Diaspora and Refugees in Southeast Asia </li>
+                  </ul>
+              </div>
+              <div class="module-col" id="minor">
+                <h3> Minor </h3>
+                <h4 id="cnm"> Communications and New Media </h4>
+                  <ul class="module-list"> 
+                    <li> Game Design </li>
+                    <li> Cybercrime and Copyright </li>
+                    <li> Computational Media Literacy </li>
+                    <li> Principles of Communication Design </li>
+                </ul> 
+              </div>
+              <div class="module-col" id="language">
+                <h3> Language </h3>
+                <h4 id="korean"> Korean </h4>
+                  <ul class="module-list"> 
+                    <li> Korean 1 </li>
+                    <li> Korean 2 </li>
+                    <li> Korean 3 </li>
+                    <li> Korean 4 </li>
+                </ul> 
+              </div>
             </div>
-
-            <div class="module-col" id="major">
-              <h3> Major </h3>
-              <h4 id="global-studies"> Global Studies </h4>
-                <ul class="module-list">
-                  <li> Global Issues </li>
-                  <li> Origins of the Modern World </li>
-                  <li> Global Political Economy </li>
-                  <li> Global Governance </li>
-                  <li> Methods of Social Research </li>
-                  <li> Social Thought & Social Theory</li>
-                  <li> Contested Globalization: Resistance and Resilience </li>
-                  <li> Citizenship and the Politics of Belonging </li>
-                </ul>  
-            </div>
+            
             <!-- <div class="module-col" id="specialization">
               <h3> Specialization </h3>
               <h4 id="specialization-1"> Global Health, Environment & Technology </h4>

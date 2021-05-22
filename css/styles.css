@@ -400,7 +400,7 @@ footer .btn a {
 .about-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 2fr;
 }
 .about-left {
     background: linear-gradient(to bottom right, #450070, #210036);
@@ -413,17 +413,18 @@ footer .btn a {
 }
 .about-left-content > div {
     background: #fef;
-    padding: 4rem 4rem 2.5rem 4rem;
+    padding: 3rem 3rem 2.5rem 3rem;
     text-align: center;
 }
 .about-left-content {
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.2);
     position: absolute;
-    /* right: 50px; */ 
+    /* right: 50px;  */
+    width: 75%;
 }
 .profile-img img {
     display: block;
-    width: 200px;
+    width: 180px;
 }
 .profile-img {
     /* width: 200px; */
@@ -435,8 +436,9 @@ footer .btn a {
     justify-content: center;
 }
 .about-left-content h2 {
-    font-size: 2rem;
-    margin: 2.2rem 0 0.6rem 0;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 2.2rem 0 0.5rem 0;
     line-height: 1.2;
     padding-bottom: 1rem;
     border-bottom: 3px solid #fe0070;
@@ -444,7 +446,7 @@ footer .btn a {
 .about-left-content h3 {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-top: 1.2rem;
 }
 .about-icons {
@@ -457,8 +459,8 @@ footer .btn a {
     list-style-type: none;
     background: #450070;
     color: #fef;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 0 0.5rem;
     border-radius: 50%;
     display: flex;
@@ -477,61 +479,179 @@ footer .btn a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 20px 20px 20px;
-    text-align: center;
-}
-.about-right h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #450070;
-}
-.about-right-content p {
-    font-size: 16px;
-    padding: 0.5rem;
-    opacity: 0.8;
-    text-align: left;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 10% 3% 5% 3%;
 }
 
-/* Style the tab */
+/* Style tab */
+.tab-container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 8% 92%;
+    height: 85vh;
+    background: rgba(0,0,0,0.2);
+}
+
 .tab {
     width: 100%;
-    padding: 0;
-    margin: 16px;
+    height: 50px;
     /* overflow: hidden; */
-    border: 1px solid #450070;
+    border: 2px solid #450070;
     background-color: #fef;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #450070;
 }
   
-/* Style the tab content */
 .tab-content {
     display: none;
-    padding: 6px 12px;
+    padding: 6px;
     border: 1px solid #ccc;
     border-top: none;
 }
 
-.tab-container {
-    display: grid;
-    width: 90%;
-    grid-template-rows: 15% 85%;
-    grid-column: 2 / span 2;
-    height: 70vh;
+/* Experience */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #450070;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/* Container around content */
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #fef;
+    border: 4px solid #450070;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+/* Place the container to the left */
+.timeline-left {
+    left: 0;
+}
+  
+/* Place the container to the right */
+.timeline-right {
+    left: 50%;
+}
+  
+/* Add arrows to the left container (pointing right) */
+.timeline-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #450070;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #450070;
+}
+  
+/* Add arrows to the right container (pointing left) */
+.timeline-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #450070;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #450070 transparent transparent;
+}
+  
+/* Fix the circle for containers on the right side */
+.timeline-right::after {
+    left: -16px;
+}
+  
+  /* The actual content */
+.timeline-content {
+    padding: 12px 30px 20px 30px;
+    background-color: #fef;
+    position: relative;
+    border-radius: 6px;
+
+}
+.timeline-content h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+}
+.timeline-content h3 {
+    font-size: 16px;
+    text-align: center;
+    margin: 4px 4px 14px 4px;
+}
+.timeline-content h4 {
+    margin: 8px;
+    text-align: right;
+    font-size: 14px;
+    color: #fe3414;
+}
+.timeline-content ul {
+    margin: 20px 4px 6px 16px;
+}
+.timeline-content li {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #450070;
+    line-height: 1.2rem;
+    margin: 4px;
 }
 
 /* Education */
 #education-tab {
     display: grid;
+    margin: 12px;
+    background: rgba(0,0,0,0.2);
 }
-/* #education-container {
+#education-header {
+    background-color:#fef;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: smaller;
+}
+#education-container {
     width: 100%;
+    overflow: scroll;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -539,12 +659,45 @@ footer .btn a {
     margin-top: 30px;
     margin-bottom: 20px;
     display: grid;
-    grid-row-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "main-text main-text main-text main-text"
-                        "major specialization minor language";
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 20% 80%; */
+    grid-template-areas: "major specialization minor language";
+}
+#major {
+    grid-area: major;
+}
+#specialization {
+    grid-area: specialization;
+}
+#minor {
+    grid-area: minor;
+}
+#language {
+    grid-area: language;
+}
+.module-col {
+    width: 24%;
+    min-width: 160px;
+    background-color: #fef;
+    margin: 10px 3px auto;
+    padding: 20px 20px 20px 30px;
+    border-right: 2px solid #450070;
+}
+/* .module-col li {
+    text-decoration: none;
+    text-align: left;
+    margin: 4px;
 } */
+.module-list li {
+    text-decoration: none;
+    font-size: smaller;
+    line-height: 1.2em;
+    padding: 1px;
+    text-transform: inherit;
+    text-decoration: none;
+    color: #450070;
+}
 
 /* #education-main-text {
     padding: 35px;
@@ -851,16 +1004,21 @@ li {
     .project-showcase .card:hover {
         z-index: 1;
     }
-    /* .about-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .about-container {
+        display: flex;
+        flex-direction: column;
     }
     .about-left {
-        position: relative;
+        position: absolute;
+        width: 100%;
     }
-    .about-left-content {
+    /* .about-right {
+        position: relative;
+        width: 100%;
+    }  */
+    /* .about-left-content {
         position: absolute;
         right: -50px;
-    } */
+    }  */
 
 }
