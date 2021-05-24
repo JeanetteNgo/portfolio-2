@@ -1118,7 +1118,7 @@ footer .btn a {
         /* overflow-x: hidden; */
     }
     .filter-sidebar {
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 170px;
         background-color: #450070;
@@ -1135,7 +1135,7 @@ footer .btn a {
         flex-direction: row;
         list-style-type: none;
         width: 100%;
-        margin-top: -30px;
+        margin: -30px 5px 0px 5px
     }
     .filter-sidebar ul li {
         color: #fef;
