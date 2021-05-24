@@ -819,11 +819,12 @@ footer .btn a {
 .portfolio-container .main-content {
     width: 100%;
     margin-left: 250px;
-    padding: 30px;
-    margin-top: 70px;
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 200px;
 }
 .post-container {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem 2rem 2rem;
     padding: 1rem;
     color: #450070;
     background: #fe0070;
@@ -846,7 +847,7 @@ footer .btn a {
     width: 400px;
     max-width: 90%;
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
     margin: 20px;
 }
 .post-content p {
@@ -1127,7 +1128,7 @@ footer .btn a {
         padding: 10px;
     }
     .filter-sidebar ul {
-        position: relative;
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1139,12 +1140,12 @@ footer .btn a {
     .filter-sidebar ul li {
         color: #fef;
         padding: 10px 20px 10px 20px;
-        border: 1px solid rgba(255, 245, 255, 0.1);
+        border: 1px solid rgba(255, 245, 255, 0.05);
         transition: 0.3s;
     }
     .filter-sidebar ul li a {
-        display: block;
-        font-size: 14px;
+        max-width: 100%;
+        font-size: 12px;
         transition: 0.3s;
         text-decoration: none;
     }
