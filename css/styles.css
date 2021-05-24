@@ -391,6 +391,8 @@ footer .btn a {
     text-decoration: none;
 }
 .copyright {
+    /* position: fixed; */
+    /* height: 6vh; */
     background-color: #450070;
     color: #fef;
     text-align: left;
@@ -398,6 +400,7 @@ footer .btn a {
     font-size: 16px;
     width: 100%;
     letter-spacing: 1px;
+    /* top: 94vh; */
 }
 
 /* ABOUT*/
@@ -827,7 +830,7 @@ footer .btn a {
     background: #fff;
 }
 .post-content {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     margin: 10px;
 }
@@ -839,20 +842,15 @@ footer .btn a {
     text-align: left;
     margin-left: 20px;
 }
-.post h3 {
-    color: #454545;
-    color: #450070;
-    text-transform: uppercase;
-    padding: 10px;
-}
 .post-content img {
     width: 400px;
     max-width: 90%;
     height: auto;
+    max-height: 400px;
     margin: 20px;
 }
 .post-content p {
-    padding: 30px;
+    padding: 20px;
     margin: 0px 20px 0px 20px;
     font-size: 16px;
 }
@@ -1105,10 +1103,82 @@ footer .btn a {
         width: 100%;
         height: 100vh;
     }
+    .about-left-content {
+        height: 75vh;
+    }
     .about-right {
         /* position: relative; */
         width: 100%;
         height: 100vh;
-    } 
+    }
+    .portfolio-container {
+        display: flex;
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+    .filter-sidebar {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        background-color: #450070;
+        padding: 75px 0;
+    }
+    .filter-sidebar h2 {
+        padding: 10px;
+    }
+    .filter-sidebar ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        list-style-type: none;
+        width: 100%;
+        margin-top: -30px;
+    }
+    .filter-sidebar ul li {
+        color: #fef;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid rgba(255, 245, 255, 0.1);
+        transition: 0.3s;
+    }
+    .filter-sidebar ul li a {
+        display: block;
+        font-size: 14px;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+    .filter-sidebar ul li a .fas {
+        display: none;
+    }
+    .portfolio-container .main-content {
+        width: 100%;
+        margin: 0px;
+        padding: 5px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .post-container {
+        width: 90%;
+        margin: 1rem;
+        padding: 10px;
+        color: #450070;
+        background: #fe0070;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    .post-container h2 {
+        margin: 15px 0px 5px 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
