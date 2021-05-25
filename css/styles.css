@@ -285,8 +285,8 @@ a {
     backdrop-filter: blur(5px);
 }
 .project-showcase #card-01 {
-    background-image: url(../featured/shopee/images/PrototypeOverview.JPG);
-    background-size: cover;
+    background-image: url(../images/shopee-logo.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .project-showcase #card-01:hover {
@@ -294,16 +294,16 @@ a {
     z-index: 1;
 }
 .project-showcase #card-02 {
-    background-image: url(../featured/corpus-animatum/images/splash-screen.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../images/corpus-animatum-cover.png);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
 }
 .project-showcase #card-02:hover {
     background: rgba(255, 255, 255, 0.1);
     z-index: 1;
 }
 .project-showcase #card-03 {
-    background-image: url(../images/penguin-left.PNG);
+    background-image: url(../images/portfolio/penguin-run.png);
     /* background-size: cover; */
     background-repeat: no-repeat;
     display: flex;
@@ -815,27 +815,37 @@ footer .btn a {
 .filter-sidebar ul li a .fas {
     width: 30px;
 }
+/* .category-active {
+    background: rgba(0,0,0,0.2);
+} */
+
 
 .portfolio-container .main-content {
     width: 100%;
     margin-left: 250px;
     padding: 50px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 200px;
 }
 .post-container {
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 2rem;
     padding: 1rem;
     color: #450070;
     background: #fe0070;
     background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px
 }
 .post-content {
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
-.post h2 {
+.post-heading {
     color: #450070;
     text-transform: uppercase;
     padding: 10px;
@@ -843,16 +853,34 @@ footer .btn a {
     text-align: left;
     margin-left: 20px;
 }
-.post-content img {
-    width: 400px;
-    max-width: 90%;
-    height: auto;
-    max-height: 300px;
+.post-img {
+    position: relative;
+    max-width: 600px;
     margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-img img {
+    width: 600px;
+    max-width: 100%;
+    height: 300;
+}
+.category-name {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 6 00;
+    color: #454545;
+    background: rgba(255, 245, 255, 0.8);
+    padding: 4px 8px;
+    border-radius: 2px;
 }
 .post-content p {
-    padding: 20px;
-    margin: 0px 20px 0px 20px;
+    margin: 12px 30px;
     font-size: 16px;
 }
 
@@ -868,6 +896,17 @@ footer .btn a {
     transition: 0.3s;
 }
 
+.copyright-portfolio {
+    position: fixed;
+    background-color: #450070;
+    color: #fef;
+    text-align: left;
+    padding: 12px 12px 12px 24px;
+    font-size: 16px;
+    width: 250px;
+    letter-spacing: 1px;
+    top: 94vh;
+}
 
 /* ART */
 #art-body {
@@ -1103,9 +1142,9 @@ footer .btn a {
         /* position: absolute; */
         width: 100%;
         height: 100vh;
-    }
-    .about-left-content {
-        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .about-right {
         /* position: relative; */
@@ -1120,9 +1159,10 @@ footer .btn a {
     .filter-sidebar {
         position: fixed;
         width: 100%;
-        height: 170px;
+        height: 175px;
         background-color: #450070;
         padding: 75px 0;
+        z-index: 1;
     }
     .filter-sidebar h2 {
         padding: 10px;
@@ -1135,7 +1175,7 @@ footer .btn a {
         flex-direction: row;
         list-style-type: none;
         width: 100%;
-        margin: -30px 5px 0px 5px
+        margin: -26px 5px 0px 5px
     }
     .filter-sidebar ul li {
         color: #fef;
@@ -1169,7 +1209,7 @@ footer .btn a {
         justify-content: center;
         align-items: center;
     }
-    .post-container h2 {
+    .post-heading {
         margin: 15px 0px 5px 0px;
         padding: 5px;
         text-align: center;
@@ -1180,6 +1220,9 @@ footer .btn a {
         margin: 3px;
         justify-content: center;
         align-items: center;
+    }
+    .copyright-portfolio {
+        display: none;
     }
 
 }
